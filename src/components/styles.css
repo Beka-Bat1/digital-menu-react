@@ -1,0 +1,422 @@
+#logo{
+    height: 5rem;
+    width: 5rem;
+}
+.row.d-flex.justify-content-sm-end{
+    margin-right:0px;
+}
+#workshop-button{
+        margin-left: 10px;
+    }
+
+:root{
+    --color: #e9c46a;
+}
+
+.heading{
+    margin-bottom: 3em;
+}
+
+.container contact{
+  margin-top: 50em;
+}
+.map-responsive{
+  overflow: hidden;
+  padding-bottom: 80%;
+  position:relative;
+
+}
+section{
+    margin-top: 10em;
+    height: fit-content;
+}
+.map-responsive iframe{
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.formGroup{
+  margin-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+}
+
+
+.registerForm{
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+.teamContainer{
+    margin-top: 20em;
+    margin-bottom: 20em;
+}
+.navbar{
+    height: 5em;
+}
+
+footer{
+    margin-top: 12em;
+    background-color: var(--color);
+    position: relative;
+    height: fit-content;
+    bottom: 0;
+    width: 100%;
+}
+.map-responsive{
+    margin-top: 2em;
+}
+
+.carousel-caption{
+    /*------------------------------------important here alignment vertical translateY */
+    transform: translateY(-40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner img{
+    width:100%;
+    height:27em;
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+h1, h3{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.carousel-caption h1{
+    font-size:400%;
+    text-shadow: 1px 1.5px 15px #000033dc; /* 1 - ვერტიკალური, 2 - ჰორიზონტალური, 3 - სისქე ჩრდილის, 4 - ფერი*/
+}
+.carousel-caption h3{
+    font-size:190%;
+    text-shadow: 1px 1px 10px #000033dc;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+.program{
+    width:75%;
+    margin:0 auto;
+    margin-top:2rem;
+    margin-bottom: 1rem;
+}
+
+main{
+    margin-top: 5.1em;
+}
+.yellowText{
+    color: #495867;
+}
+.icon{
+    color: #f4a261; /*  #e76f51 */
+}
+
+.card{
+    height: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.card-img-top{
+    height: fit-content;
+}
+
+#rightImage{
+    height: 30em;
+    width: auto;
+}
+#about{
+    margin-top: 15em;
+}
+
+.fh5co-reviews-outer {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+.fh5co-reviews-outer .fh5co-reviews-inner {
+    margin-top: 100px;
+  }
+.fh5co-reviews-outer > h1 {
+    color: #f4a261;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .fh5co-reviews-outer > small {
+    text-align: center;
+    display: block;
+  }
+  .fh5co-reviews-outer .testimonial-desc {
+    clear: both;
+    padding-top: 30px;
+    font-weight: 500;
+  }
+  .fh5co-reviews-outer .testimonial-2 {
+    margin-left: 50px;
+  }
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+
+  }
+
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .no-gutters{
+      padding-top: 1em;
+  }
+
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #f4a261;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #e76f51;
+  }
+
+  .map-column{
+    padding-bottom: 2em ;
+}
+
+  @media (min-width: 1200px){
+    /*empty*/
+}
+@media (max-width: 1024px){
+    .row.d-flex.justify-content-sm-end{
+    margin-right:0px;
+}
+    .card-column{
+        padding: 2em;
+        width: 100%;
+    }
+    .carousel-caption{
+        top:40%;
+    }
+    .carousel-caption h1{
+        font-size:300%;
+    }
+    .carousel-caption h3{
+        font-size:150%;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    .carousel-indicators{
+        display:none;
+    }
+    card{
+        align-self: center;
+    }
+    .card-column{
+        padding: 1.5em;
+        width: 100%;
+        heigh: fit-content;
+        margin-top: 2em;
+    }
+    .card-column p, span{
+        font-size: 26px;
+        font-weight: 300;
+    }
+    .card-column h3{
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .map-column{
+        padding-bottom: 2em ;
+    }
+}
+@media (max-width: 768px){
+
+    .carousel-caption{
+        top:40%;
+    }
+    .carousel-caption h1{
+        font-size:300%;
+    }
+    .carousel-caption h3{
+        font-size:150%;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    .carousel-indicators{
+        display:none;
+    }
+    .card-column{
+        padding: 1.5em;
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+    }
+    .card-column p, span{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .card-column h3{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .map-column{
+        padding-bottom: 2em ;
+    }
+    #rightimage{
+        width: 80%;
+        height: 90%;
+    }
+    .row.d-flex.justify-content-sm-end{
+    margin-right:15px;
+}
+}
+@media (max-width: 680px){
+    .carousel-caption{
+        top:40%;
+    }
+    .carousel-caption h1{
+
+        padding-top:2rem;
+        padding-bottom:1rem;
+    }
+    .carousel-caption h3{
+        font-size:120%;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    .carousel-indicators{
+        display:none;
+    }
+    .card-column{
+        padding: 2em;
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+    }
+    .carousel-item{
+        height: 20em;
+    }
+
+    .card-column h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .card-column p{
+        font-size: 16px;
+    }
+    .row.d-flex.justify-content-sm-end{
+    margin-right:0px;
+}
+
+}
+@media (max-width: 480px){
+    .btn-group-lg>.btn, .btn-lg {
+     padding: 0.25em;
+    font-size: 16px;
+    line-height: 1.5em;
+    border-radius: 0.25em;
+}
+    body, html{
+        width: 100%;
+        height: 100vh;
+    }
+    .carousel-caption{
+        top:40%;
+    }
+    .carousel-caption h1{
+        display: flex;
+        align-self: center;
+        font-size: 1.5em;
+
+    }
+    .carousel-caption h3{
+        font-size:1em;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    .carousel-indicators{
+        display:none;
+    }
+    .card-column{
+        padding: 2em;
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+        position: relative;
+        bottom: 10px
+    }
+    .map-column{
+        padding-bottom: 2em ;
+    }
+    .card{
+        margin-top: 2em;
+    }
+    #table-card{
+        margin:2em;
+    }
+    .review{
+        margin-top: 2em;
+        margin-bottom: 2em ;
+        padding:0px;
+    }
+    button{
+        font-size: 18px;
+    }
+    #workshop-button{
+        margin-left: 2em;
+    }
+    .table td, .table th{
+        padding: 0.4em;
+        font-size:12px;
+    }
+}
+
