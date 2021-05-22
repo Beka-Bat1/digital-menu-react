@@ -1,7 +1,7 @@
 import * as actionTypes from "./actionTypes";
 import axios from "../../axios-orders";
 
-export const changeToEditPage = () => {
+export const changeToEditPage = (state) => {
   return { type: actionTypes.EDIT_PAGE };
 };
 
@@ -27,7 +27,6 @@ export const removeItem = (itemId) => {
       .delete("/orderData/" + itemId)
       .then((response) => {
           console.log(response)
-        // dispatch(setItemData(response.data))
       })
       .catch((error) => dispatch(fetchItemDataFailed(error)));
   };

@@ -16,7 +16,7 @@ class HomeContent extends Component {
           <div className="row text-center">
             <div className="card-column col-xs-12 col-sm-6 col-md-6 col-lg-4">
               <div className="card shadow">
-                <img className="card-img-top" src={free} alt="Card image cap" />
+                <img className="card-img-top" src={free} alt="Card" />
                 <div className="card-body d-flex flex-column justify-content-between">
                   <h3 className="highlightText">
                     {" "}
@@ -36,7 +36,7 @@ class HomeContent extends Component {
             </div>
             <div className="card-column col-xs-12 col-sm-6 col-md-6  col-lg-4">
               <div className="card shadow">
-                <img className="card-img-top" src={qr} alt="Card image cap" />
+                <img className="card-img-top" src={qr} alt="Card" />
                 <div className="card-body d-flex flex-column justify-content-between">
                   <h3 className="highlightText">
                     <i className="fas fa-user-graduate icon"></i> Share quickly
@@ -60,7 +60,7 @@ class HomeContent extends Component {
                 <img
                   className="card-img-top"
                   src={access1}
-                  alt="Card image cap"
+                  alt="Card"
                 />
                 <div className="card-body d-flex flex-column justify-content-between">
                   <h3 className="highlightText">

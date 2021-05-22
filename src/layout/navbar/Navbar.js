@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import logo from "../../assets/media/logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "../home/Home";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LogedOutComponent = (prop) => {
   return (

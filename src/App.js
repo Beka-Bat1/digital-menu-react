@@ -1,67 +1,48 @@
 import "./App.css";
-import React, { Component, setState } from "react";
+import React, {  } from "react";
 // ROUTER
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // BOOTSTRAP
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 // COMPONENTS
 import Workshop from "./components/Workshop";
-import Home from './components/home/Home';
-import Navbar from "./components/navbar/Navbar";
-import Footer from './components/footer/footer';
-import About from './components/about/about';
-import Contact from './components/contact/Contact';
-import Team from './components/team/Team';
-import Login from './components/login/Login';
-import Register from './components/register/Register';
-import Menu from './components/menu/Menu';
-import Add from './components/add/Add';
+import Home from "./components/home/Home";
+import Navbar from "./layout/navbar/Navbar";
+import About from "./components/about/about";
+import Contact from "./components/contact/Contact";
+import Team from "./components/team/Team";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
+import Menu from "./components/menu/Menu";
+import Add from "./components/add/Add";
+import GlobalState from "./context/GlobalState";
+import Footer from './layout/footer/footer'
 
-
-
-
-
-class App extends Component {
-  state = {
-    logedIn: true,
-    page: null,
-    items: []
-  };
-
-  toggleLogin = () => {
-    alert('login')
-    console.log(this.state.logedIn)
-    this.setState( prevState => ({
-      logedIn: !prevState.logedIn
-    }));
-  };
-
-  render() {
-    return (
-      <>
+const App = (props) => {
+  return (
+    <GlobalState>
       <Router>
         <div>
-          <Navbar click={this.toggleLogin} logedIn={this.logedIn}/>
+          <Navbar />
           <hr />
           <Switch>
-              <Route path='/home' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/team' component={Team} />
-              <Route path='/logIn' component={Login} />
-              <Route path='/register' component={Register} />
-              <Route path='/workshop' component={Workshop} {...this.props}/>
-              <Route path='/menu' component={Menu} />
-              <Route path='/Add' component={Add} click={this.acceptItems}/>
+            <Route path="/home" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/team" component={Team} />
+            <Route path="/logIn" component={Login} />
+            <Route path="/register" component={Register} />
+            <Route path="/workshop" component={Workshop} {...props} />
+            <Route path="/menu" component={Menu} />
+            <Route path="/Add" component={Add} />
           </Switch>
         </div>
       </Router>
       <Footer />
-      </>
-    );
-  }
-}
+    </GlobalState>
+  );
+};
 
 export default App;
